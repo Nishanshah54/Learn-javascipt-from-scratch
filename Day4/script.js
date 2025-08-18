@@ -17,8 +17,10 @@ let i=0;
 for(div of divs)
 {
     console.log(div.innerText);
-   div.innerText=`uniques text values ${i}`;
-   i++;
+
+    div.innerText=`uniques text values ${i}`;
+   
+    i++;
 }
 //---------------------------------End  of Task 2 -----------------------------------------------
 
@@ -31,3 +33,29 @@ for(div of divs)
 
 // console.dir(dom);
 // console.log(dom);
+
+// ++++++++++++++++++++++++++++++++++++ count string +++++++++++++++++++
+
+const str="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+console.log(str,str.length);
+// ++++++++++++++++++++++++++++++++++++ remove string +++++++++++++++++++
+function removeDuplicateWords(s)
+{
+    // using set()
+    let set=new Set();
+   let words = s.toUpperCase().split('');  
+
+    words.forEach(element => {
+        set.add(element);
+    });
+    // Spread the set into an array, then join with spaces
+    return [...set].join(" ");
+}
+
+const s="The Quick brown fox jump over the lazy dog";
+const r=removeDuplicateWords(s);
+console.log(r);
+
+
+
