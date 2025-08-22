@@ -20,7 +20,7 @@ on the element, its value is updated; otherwise, a new attribute with the given 
 // p.getAttribute("id");
 
 // p.setAttribute('class',"newClassName");
-// p.classList('class',"newClassName");
+// p.classList.add("className");
 
 
 /*

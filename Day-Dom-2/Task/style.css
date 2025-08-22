@@ -2,9 +2,10 @@
 {
     /* color:white; */
     text-align: right;
+    background-color: brown;
 }
 .newClass
 {
     color:white;
-    text-align: right;
+    text-align: left;
 }

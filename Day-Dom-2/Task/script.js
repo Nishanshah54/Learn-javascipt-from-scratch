@@ -27,5 +27,5 @@ Did you notice ,how you overwrite the class name when you add a new one? Solve t
 
 let param=document.querySelector('p');
 // param.setAttribute('class','newClass'); 
-param.classList('class','newClass'); 
+param.classList.add("newClass") ;
 
